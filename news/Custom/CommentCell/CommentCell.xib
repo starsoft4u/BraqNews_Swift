@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="barq.ttf">
+            <string>HelveticaNeueW23forSKY-Reg</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentCell" rowHeight="244" id="loM-eT-qAp" customClass="CommentCell" customModule="news" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="517" height="244"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" semanticContentAttribute="forceRightToLeft" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="loM-eT-qAp" id="wsj-3v-m5E">
+                <rect key="frame" x="0.0" y="0.0" width="517" height="243.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" translatesAutoresizingMaskIntoConstraints="NO" id="ShI-Bm-JlC">
+                        <rect key="frame" x="12" y="8" width="493" height="126.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_profile" translatesAutoresizingMaskIntoConstraints="NO" id="Ovn-nE-DfB">
+                                <rect key="frame" x="445" y="0.0" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="DWW-RG-pA1"/>
+                                    <constraint firstAttribute="height" constant="48" id="mUi-Vg-qem"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJA-e4-k0M">
+                                <rect key="frame" x="350" y="12.5" width="87" height="23"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeueW23forSKY-Reg" family="Helvetica Neue W23 for SKY" pointSize="19"/>
+                                <color key="textColor" red="0.21176470589999999" green="0.34901960780000002" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g74-7L-3o5">
+                                <rect key="frame" x="0.0" y="56" width="493" height="26.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeueW23forSKY-Reg" family="Helvetica Neue W23 for SKY" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="iRp-SJ-ZZk">
+                                <rect key="frame" x="0.0" y="90.5" width="272" height="36"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4EA-ZO-0lm">
+                                        <rect key="frame" x="224" y="0.0" width="48" height="36"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeueW23forSKY-Reg" family="Helvetica Neue W23 for SKY" pointSize="19"/>
+                                        <color key="textColor" red="0.21176470589999999" green="0.34901960780000002" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXM-mn-mim">
+                                        <rect key="frame" x="184" y="0.0" width="36" height="36"/>
+                                        <color key="tintColor" red="0.21176470589999999" green="0.34901960780000002" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <inset key="contentEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
+                                        <state key="normal" image="ic_like"/>
+                                        <connections>
+                                            <action selector="onLikeAction:" destination="loM-eT-qAp" eventType="touchUpInside" id="0a6-83-21Z"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pYc-Rk-Q22">
+                                        <rect key="frame" x="132" y="0.0" width="48" height="36"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeueW23forSKY-Reg" family="Helvetica Neue W23 for SKY" pointSize="19"/>
+                                        <color key="textColor" red="0.21176470589999999" green="0.34901960780000002" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJP-su-2Ns">
+                                        <rect key="frame" x="92" y="0.0" width="36" height="36"/>
+                                        <color key="tintColor" red="0.21176470589999999" green="0.34901960780000002" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <inset key="contentEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
+                                        <state key="normal" image="ic_dislike"/>
+                                        <connections>
+                                            <action selector="onDislikeAction:" destination="loM-eT-qAp" eventType="touchUpInside" id="6PQ-0A-GFo"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Lt-3J-Xcb">
+                                        <rect key="frame" x="40" y="0.0" width="48" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="48" id="D6b-b4-2Pn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeueW23forSKY-Reg" family="Helvetica Neue W23 for SKY" pointSize="19"/>
+                                        <color key="textColor" red="0.21176470589999999" green="0.34901960780000002" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLI-HA-dft">
+                                        <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="CLI-HA-dft" secondAttribute="height" multiplier="1:1" id="uaa-xV-TGL"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="contentEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
+                                        <state key="normal" image="ic_flag"/>
+                                        <connections>
+                                            <action selector="onFlagAction:" destination="loM-eT-qAp" eventType="touchUpInside" id="vvr-O6-QOO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="pYc-Rk-Q22" firstAttribute="width" secondItem="4EA-ZO-0lm" secondAttribute="width" id="KFD-mQ-J4W"/>
+                                    <constraint firstItem="CLI-HA-dft" firstAttribute="width" secondItem="bXM-mn-mim" secondAttribute="width" id="L34-c2-UMG"/>
+                                    <constraint firstAttribute="height" constant="36" id="kiq-My-FEM"/>
+                                    <constraint firstItem="wJP-su-2Ns" firstAttribute="width" secondItem="bXM-mn-mim" secondAttribute="width" id="uns-fw-sM8"/>
+                                    <constraint firstItem="5Lt-3J-Xcb" firstAttribute="width" secondItem="4EA-ZO-0lm" secondAttribute="width" id="wBw-AI-ipz"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bfx-A0-vOF">
+                                <rect key="frame" x="0.0" y="14" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeueW23forSKY-Reg" family="Helvetica Neue W23 for SKY" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Bfx-A0-vOF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="JJA-e4-k0M" secondAttribute="trailing" constant="8" id="3UB-9J-r0P"/>
+                            <constraint firstItem="Ovn-nE-DfB" firstAttribute="top" secondItem="ShI-Bm-JlC" secondAttribute="top" id="6Oc-vR-wme"/>
+                            <constraint firstItem="Bfx-A0-vOF" firstAttribute="centerY" secondItem="Ovn-nE-DfB" secondAttribute="centerY" id="MsN-th-oZC"/>
+                            <constraint firstItem="JJA-e4-k0M" firstAttribute="centerY" secondItem="Ovn-nE-DfB" secondAttribute="centerY" id="NNG-Rq-ywc"/>
+                            <constraint firstAttribute="trailing" secondItem="Bfx-A0-vOF" secondAttribute="trailing" id="P6P-EO-dWt"/>
+                            <constraint firstItem="iRp-SJ-ZZk" firstAttribute="top" secondItem="g74-7L-3o5" secondAttribute="bottom" constant="8" id="Vcm-pL-86o"/>
+                            <constraint firstItem="g74-7L-3o5" firstAttribute="leading" secondItem="ShI-Bm-JlC" secondAttribute="leading" id="apO-ql-IA2"/>
+                            <constraint firstAttribute="trailing" secondItem="g74-7L-3o5" secondAttribute="trailing" id="fT2-jI-vz1"/>
+                            <constraint firstItem="JJA-e4-k0M" firstAttribute="leading" secondItem="Ovn-nE-DfB" secondAttribute="trailing" constant="8" id="foX-z4-i4c"/>
+                            <constraint firstAttribute="bottom" secondItem="iRp-SJ-ZZk" secondAttribute="bottom" id="ljB-J8-RmC"/>
+                            <constraint firstItem="Ovn-nE-DfB" firstAttribute="leading" secondItem="ShI-Bm-JlC" secondAttribute="leading" id="paj-eg-5qt"/>
+                            <constraint firstItem="g74-7L-3o5" firstAttribute="top" secondItem="Ovn-nE-DfB" secondAttribute="bottom" constant="8" id="uxu-0C-qoL"/>
+                            <constraint firstAttribute="trailing" secondItem="iRp-SJ-ZZk" secondAttribute="trailing" id="xXX-Zs-jtJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ShI-Bm-JlC" secondAttribute="bottom" priority="999" constant="8" id="Dgi-lb-lD2"/>
+                    <constraint firstItem="ShI-Bm-JlC" firstAttribute="top" secondItem="wsj-3v-m5E" secondAttribute="top" constant="8" id="dYA-dr-acu"/>
+                    <constraint firstItem="ShI-Bm-JlC" firstAttribute="leading" secondItem="wsj-3v-m5E" secondAttribute="leading" constant="12" id="yn0-Zu-vux"/>
+                    <constraint firstAttribute="trailing" secondItem="ShI-Bm-JlC" secondAttribute="trailing" constant="12" id="zQn-8m-kng"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="commentLabel" destination="g74-7L-3o5" id="AYr-DA-TNy"/>
+                <outlet property="dislikeButton" destination="wJP-su-2Ns" id="Md8-Kx-ZPX"/>
+                <outlet property="dislikeLabel" destination="pYc-Rk-Q22" id="jVD-ar-Laj"/>
+                <outlet property="flagButton" destination="CLI-HA-dft" id="5VP-ip-OXx"/>
+                <outlet property="flagLabel" destination="5Lt-3J-Xcb" id="QtT-Rq-aHq"/>
+                <outlet property="likeButton" destination="bXM-mn-mim" id="O6S-P0-0A8"/>
+                <outlet property="likeLabel" destination="4EA-ZO-0lm" id="uZ2-dZ-lSl"/>
+                <outlet property="timeLabel" destination="Bfx-A0-vOF" id="kFL-ou-i6T"/>
+                <outlet property="userImageView" destination="Ovn-nE-DfB" id="Cck-YH-WjE"/>
+                <outlet property="userNameLabel" destination="JJA-e4-k0M" id="A2l-9g-cGq"/>
+            </connections>
+            <point key="canvasLocation" x="25.362318840579711" y="125.89285714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_dislike" width="37.5" height="37.5"/>
+        <image name="ic_flag" width="36" height="36"/>
+        <image name="ic_like" width="37.5" height="37.5"/>
+        <image name="ic_profile" width="512" height="512"/>
+    </resources>
+</document>

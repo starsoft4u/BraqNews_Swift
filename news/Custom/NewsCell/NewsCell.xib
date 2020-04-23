@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="barq.ttf">
+            <string>HelveticaNeueW23forSKY-Reg</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="NewsCell" rowHeight="494" id="39x-WP-8W4" customClass="NewsCell" customModule="news" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="486" height="494"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" semanticContentAttribute="forceRightToLeft" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="39x-WP-8W4" id="x0n-7e-9iN">
+                <rect key="frame" x="0.0" y="0.0" width="486" height="493.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" translatesAutoresizingMaskIntoConstraints="NO" id="dZO-hS-FTR" customClass="ShadowView" customModule="news" customModuleProvider="target">
+                        <rect key="frame" x="12" y="8" width="462" height="406.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="dNt-nL-48a">
+                                <rect key="frame" x="8" y="8" width="446" height="390.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="NQ7-ih-nmv">
+                                        <rect key="frame" x="0.0" y="0.0" width="446" height="40"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sxo-Sd-G0o">
+                                                <rect key="frame" x="406" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="lUG-Wz-cEp"/>
+                                                    <constraint firstAttribute="height" constant="40" id="vXf-5i-65H"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceRightToLeft" text="BBC News" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LpK-aS-JnV">
+                                                <rect key="frame" x="90.5" y="10" width="307.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeueW23forSKY-Reg" family="Helvetica Neue W23 for SKY" pointSize="17"/>
+                                                <color key="textColor" red="0.71372549019999998" green="0.1215686275" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 minutes ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D0T-GY-Uno">
+                                                <rect key="frame" x="0.0" y="12" width="82.5" height="16"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeueW23forSKY-Reg" family="Helvetica Neue W23 for SKY" pointSize="13"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News title" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJT-4R-WKT">
+                                        <rect key="frame" x="0.0" y="52" width="446" height="26.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeueW23forSKY-Reg" family="Helvetica Neue W23 for SKY" pointSize="22"/>
+                                        <color key="textColor" red="0.28235294117647058" green="0.28235294117647058" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ivi-0r-AER">
+                                        <rect key="frame" x="0.0" y="90.5" width="446" height="248"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="248" id="2vE-14-AWG"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="NKK-8h-hag">
+                                        <rect key="frame" x="0.0" y="350.5" width="446" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ySk-fX-zv8">
+                                                <rect key="frame" x="406" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="OCh-lv-kLB"/>
+                                                    <constraint firstAttribute="height" constant="40" id="chZ-dZ-8L5"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.12941176470588234" green="0.48627450980392156" blue="0.72549019607843135" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" image="ic_share_large"/>
+                                                <connections>
+                                                    <action selector="onShareAction:" destination="39x-WP-8W4" eventType="touchUpInside" id="vqy-Vu-uqW"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" translatesAutoresizingMaskIntoConstraints="NO" id="2CP-tu-jYf">
+                                                <rect key="frame" x="47.5" y="19.5" width="357.5" height="1"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="Hb1-xC-rdJ"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ri6-VN-sjf">
+                                                <rect key="frame" x="37" y="10" width="9.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeueW23forSKY-Reg" family="Helvetica Neue W23 for SKY" pointSize="17"/>
+                                                <color key="textColor" red="0.13725490200000001" green="0.43921568630000002" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRn-f1-xhX">
+                                                <rect key="frame" x="0.0" y="2" width="36" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="beC-33-Xz6"/>
+                                                    <constraint firstAttribute="width" constant="36" id="wRA-Nz-5UZ"/>
+                                                </constraints>
+                                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="ic_comment"/>
+                                                <connections>
+                                                    <action selector="onCommentAction:" destination="39x-WP-8W4" eventType="touchUpInside" id="PFl-7p-Ouu"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dNt-nL-48a" firstAttribute="leading" secondItem="dZO-hS-FTR" secondAttribute="leading" constant="8" id="Ebf-hQ-9oe"/>
+                            <constraint firstItem="dNt-nL-48a" firstAttribute="top" secondItem="dZO-hS-FTR" secondAttribute="top" constant="8" id="GH5-D5-P0K"/>
+                            <constraint firstAttribute="bottom" secondItem="dNt-nL-48a" secondAttribute="bottom" constant="8" id="VqS-AO-zRd"/>
+                            <constraint firstAttribute="trailing" secondItem="dNt-nL-48a" secondAttribute="trailing" constant="8" id="Z9Z-XK-l6O"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="dZO-hS-FTR" firstAttribute="top" secondItem="x0n-7e-9iN" secondAttribute="top" constant="8" id="4Fj-m4-27P"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dZO-hS-FTR" secondAttribute="bottom" priority="999" constant="8" id="Xgf-va-geO"/>
+                    <constraint firstItem="dZO-hS-FTR" firstAttribute="leading" secondItem="x0n-7e-9iN" secondAttribute="leading" constant="12" id="jhP-r1-xxQ"/>
+                    <constraint firstAttribute="trailing" secondItem="dZO-hS-FTR" secondAttribute="trailing" constant="12" id="xPO-vT-pq4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="bottomView" destination="NKK-8h-hag" id="eFN-zT-a0u"/>
+                <outlet property="commentButton" destination="cRn-f1-xhX" id="wVB-kk-Tv5"/>
+                <outlet property="commentLabel" destination="Ri6-VN-sjf" id="NhE-So-4nJ"/>
+                <outlet property="imageHeightConstraint" destination="2vE-14-AWG" id="HhP-j0-Ywi"/>
+                <outlet property="newsImageView" destination="Ivi-0r-AER" id="HpF-dg-nf5"/>
+                <outlet property="shareButton" destination="ySk-fX-zv8" id="dnL-cg-3ZM"/>
+                <outlet property="sourceIcon" destination="sxo-Sd-G0o" id="GgX-01-uWA"/>
+                <outlet property="sourceNameLabel" destination="LpK-aS-JnV" id="S3V-ZM-TII"/>
+                <outlet property="timestampLabel" destination="D0T-GY-Uno" id="Rjp-Tm-PUc"/>
+                <outlet property="titleLabel" destination="SJT-4R-WKT" id="POE-7I-cRX"/>
+            </connections>
+            <point key="canvasLocation" x="68.115942028985515" y="252.45535714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_comment" width="25" height="25"/>
+        <image name="ic_share_large" width="37.5" height="37.5"/>
+    </resources>
+</document>

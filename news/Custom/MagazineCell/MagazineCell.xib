@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="barq.ttf">
+            <string>HelveticaNeueW23forSKY-Reg</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="MagazineCell" rowHeight="295" id="bQO-dN-xTo" customClass="MagazineCell" customModule="news" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="454" height="295"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" semanticContentAttribute="forceRightToLeft" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bQO-dN-xTo" id="sY7-H4-lnr">
+                <rect key="frame" x="0.0" y="0.0" width="454" height="294.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" translatesAutoresizingMaskIntoConstraints="NO" id="HQr-Jh-33K">
+                        <rect key="frame" x="12" y="0.0" width="430" height="182.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pgt-MS-9g4">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="174.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Pgt-MS-9g4" secondAttribute="height" multiplier="596:242" id="Ln3-0g-Rs9"/>
+                                </constraints>
+                            </imageView>
+                            <view hidden="YES" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" translatesAutoresizingMaskIntoConstraints="NO" id="AKU-Ex-DH8">
+                                <rect key="frame" x="260" y="127.5" width="154" height="39"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Magazine Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rc4-fC-Gav">
+                                        <rect key="frame" x="8" y="8" width="138" height="23"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeueW23forSKY-Reg" family="Helvetica Neue W23 for SKY" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.71372549019999998" green="0.1215686275" blue="0.1647058824" alpha="0.74855522259999996" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="rc4-fC-Gav" secondAttribute="bottom" constant="8" id="0dy-Cw-f9R"/>
+                                    <constraint firstItem="rc4-fC-Gav" firstAttribute="leading" secondItem="AKU-Ex-DH8" secondAttribute="leading" constant="8" id="5rq-Ur-Lvn"/>
+                                    <constraint firstAttribute="trailing" secondItem="rc4-fC-Gav" secondAttribute="trailing" constant="8" id="7Ta-td-2v6"/>
+                                    <constraint firstItem="rc4-fC-Gav" firstAttribute="top" secondItem="AKU-Ex-DH8" secondAttribute="top" constant="8" id="vZu-6s-gIM"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Pgt-MS-9g4" firstAttribute="leading" secondItem="HQr-Jh-33K" secondAttribute="leading" id="3GA-Kx-h8T"/>
+                            <constraint firstItem="AKU-Ex-DH8" firstAttribute="leading" secondItem="Pgt-MS-9g4" secondAttribute="leading" constant="16" id="HfI-5L-kf0"/>
+                            <constraint firstAttribute="trailing" secondItem="Pgt-MS-9g4" secondAttribute="trailing" id="OzH-id-l8k"/>
+                            <constraint firstAttribute="bottom" secondItem="Pgt-MS-9g4" secondAttribute="bottom" constant="8" id="Uqp-cd-0Yl"/>
+                            <constraint firstItem="Pgt-MS-9g4" firstAttribute="top" secondItem="HQr-Jh-33K" secondAttribute="top" id="Uv3-Cb-urw"/>
+                            <constraint firstItem="Pgt-MS-9g4" firstAttribute="top" secondItem="HQr-Jh-33K" secondAttribute="top" id="eFC-jh-rMY"/>
+                            <constraint firstItem="Pgt-MS-9g4" firstAttribute="leading" secondItem="HQr-Jh-33K" secondAttribute="leading" id="fS3-H6-sH8"/>
+                            <constraint firstAttribute="trailing" secondItem="Pgt-MS-9g4" secondAttribute="trailing" id="hDD-56-GgK"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Pgt-MS-9g4" secondAttribute="bottom" id="t6t-6l-3tv"/>
+                            <constraint firstItem="AKU-Ex-DH8" firstAttribute="bottom" secondItem="Pgt-MS-9g4" secondAttribute="bottom" constant="-8" id="tIf-sY-GHj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="HQr-Jh-33K" firstAttribute="top" secondItem="sY7-H4-lnr" secondAttribute="top" id="1QK-K7-uaN"/>
+                    <constraint firstAttribute="trailing" secondItem="HQr-Jh-33K" secondAttribute="trailing" constant="12" id="4yd-01-rdC"/>
+                    <constraint firstItem="HQr-Jh-33K" firstAttribute="leading" secondItem="sY7-H4-lnr" secondAttribute="leading" constant="12" id="TRl-cJ-2Cz"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="HQr-Jh-33K" secondAttribute="bottom" priority="999" id="u7u-T6-VKD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="magazineImageView" destination="Pgt-MS-9g4" id="jrP-fl-8Us"/>
+                <outlet property="magazineNameLabel" destination="rc4-fC-Gav" id="Fwl-ga-PQe"/>
+            </connections>
+            <point key="canvasLocation" x="76.811594202898561" y="179.79910714285714"/>
+        </tableViewCell>
+    </objects>
+</document>

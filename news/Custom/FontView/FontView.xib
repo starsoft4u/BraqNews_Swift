@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="barq.ttf">
+            <string>HelveticaNeueW23forSKY-Reg</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="yUK-Eh-1CI" customClass="FontView" customModule="news" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="246" height="206"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="yFA-YV-hXk">
+                    <rect key="frame" x="12" y="31" width="222" height="160"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Font Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Hf-q2-oHa">
+                            <rect key="frame" x="0.0" y="0.0" width="222" height="20.5"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeueW23forSKY-Reg" family="Helvetica Neue W23 for SKY" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Font Size"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Uul-EA-loh">
+                            <rect key="frame" x="0.0" y="35.5" width="222" height="30"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jab-u4-DYM">
+                                    <rect key="frame" x="210.5" y="0.0" width="11.5" height="30"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeueW23forSKY-Reg" family="Helvetica Neue W23 for SKY" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <slider opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="17" minValue="14" maxValue="24" translatesAutoresizingMaskIntoConstraints="NO" id="q32-KY-hSg">
+                                    <rect key="frame" x="26" y="0.0" width="174.5" height="31"/>
+                                    <color key="tintColor" red="0.1803921568627451" green="0.54509803921568623" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="onSizeAction:" destination="yUK-Eh-1CI" eventType="valueChanged" id="ASB-dF-WON"/>
+                                    </connections>
+                                </slider>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMf-ji-Hqn">
+                                    <rect key="frame" x="0.0" y="0.0" width="16" height="30"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeueW23forSKY-Reg" family="Helvetica Neue W23 for SKY" pointSize="24"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" translatesAutoresizingMaskIntoConstraints="NO" id="LcJ-dN-9fJ">
+                            <rect key="frame" x="0.0" y="80.5" width="222" height="1"/>
+                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="gE5-iA-kAm"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Font Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMd-2p-n0b">
+                            <rect key="frame" x="0.0" y="96.5" width="222" height="20.5"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeueW23forSKY-Reg" family="Helvetica Neue W23 for SKY" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Font Type"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hw1-lh-Ar1">
+                            <rect key="frame" x="0.0" y="132" width="222" height="29"/>
+                            <segments>
+                                <segment title="Bold"/>
+                                <segment title="Normal"/>
+                            </segments>
+                            <color key="tintColor" red="0.18039215689999999" green="0.5450980392" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Bold"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onTypeAction:" destination="yUK-Eh-1CI" eventType="valueChanged" id="gig-aw-nga"/>
+                            </connections>
+                        </segmentedControl>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="yFA-YV-hXk" firstAttribute="centerY" secondItem="yUK-Eh-1CI" secondAttribute="centerY" constant="8" id="22g-rA-CEV"/>
+                <constraint firstItem="yFA-YV-hXk" firstAttribute="leading" secondItem="dEw-8C-gmX" secondAttribute="leading" constant="12" id="3BE-Ud-eK4"/>
+                <constraint firstAttribute="trailing" secondItem="yFA-YV-hXk" secondAttribute="trailing" constant="12" id="sJ2-ba-UpB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="dEw-8C-gmX"/>
+            <connections>
+                <outlet property="fontSizeSlider" destination="q32-KY-hSg" id="XXs-cV-wI8"/>
+                <outlet property="fontTypeSegment" destination="hw1-lh-Ar1" id="ef1-wL-egw"/>
+            </connections>
+            <point key="canvasLocation" x="391.304347826087" y="-439.28571428571428"/>
+        </view>
+    </objects>
+</document>

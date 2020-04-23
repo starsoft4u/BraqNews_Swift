@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="barq.ttf">
+            <string>HelveticaNeueW23forSKY-Reg</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentHeader" rowHeight="192" id="ceZ-bk-Iny" customClass="CommentHeader" customModule="news" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="410" height="192"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ceZ-bk-Iny" id="FvF-p1-pAp">
+                <rect key="frame" x="0.0" y="0.0" width="410" height="191.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" translatesAutoresizingMaskIntoConstraints="NO" id="9QH-Ss-yzc">
+                        <rect key="frame" x="12" y="16" width="386" height="82.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="saudi" translatesAutoresizingMaskIntoConstraints="NO" id="653-39-W7r">
+                                <rect key="frame" x="338" y="0.0" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="WDQ-9M-Mze"/>
+                                    <constraint firstAttribute="width" constant="48" id="hMC-EG-mEU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saudi newspapers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="215-dt-UcB">
+                                <rect key="frame" x="172.5" y="0.0" width="157.5" height="23"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeueW23forSKY-Reg" family="Helvetica Neue W23 for SKY" pointSize="19"/>
+                                <color key="textColor" red="0.21176470589999999" green="0.34901960780000002" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saudi newspapers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3J-Ld-Gmm">
+                                <rect key="frame" x="189" y="31" width="141" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeueW23forSKY-Reg" family="Helvetica Neue W23 for SKY" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D0t-Oh-n8l">
+                                <rect key="frame" x="0.0" y="56" width="386" height="26.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeueW23forSKY-Reg" family="Helvetica Neue W23 for SKY" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="D0t-Oh-n8l" secondAttribute="bottom" id="2WO-aZ-lVG"/>
+                            <constraint firstItem="D0t-Oh-n8l" firstAttribute="leading" secondItem="9QH-Ss-yzc" secondAttribute="leading" id="H69-TT-Iur"/>
+                            <constraint firstAttribute="trailing" secondItem="D0t-Oh-n8l" secondAttribute="trailing" id="SAS-qh-C62"/>
+                            <constraint firstItem="215-dt-UcB" firstAttribute="top" secondItem="653-39-W7r" secondAttribute="top" id="eSb-2i-DgK"/>
+                            <constraint firstItem="215-dt-UcB" firstAttribute="leading" secondItem="653-39-W7r" secondAttribute="trailing" constant="8" id="eqK-Fw-vNr"/>
+                            <constraint firstItem="653-39-W7r" firstAttribute="leading" secondItem="9QH-Ss-yzc" secondAttribute="leading" id="iCB-hU-hYY"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="215-dt-UcB" secondAttribute="trailing" id="lCd-ak-575"/>
+                            <constraint firstItem="D0t-Oh-n8l" firstAttribute="top" secondItem="653-39-W7r" secondAttribute="bottom" constant="8" id="rsf-fO-PYS"/>
+                            <constraint firstItem="G3J-Ld-Gmm" firstAttribute="top" secondItem="215-dt-UcB" secondAttribute="bottom" constant="8" id="vqq-zv-t4p"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="G3J-Ld-Gmm" secondAttribute="trailing" id="wYK-XP-mRw"/>
+                            <constraint firstItem="G3J-Ld-Gmm" firstAttribute="leading" secondItem="215-dt-UcB" secondAttribute="leading" id="xCS-of-fsc"/>
+                            <constraint firstItem="653-39-W7r" firstAttribute="top" secondItem="9QH-Ss-yzc" secondAttribute="top" id="zdc-In-VKL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9QH-Ss-yzc" firstAttribute="top" secondItem="FvF-p1-pAp" secondAttribute="top" constant="16" id="5yT-fu-G91"/>
+                    <constraint firstAttribute="trailing" secondItem="9QH-Ss-yzc" secondAttribute="trailing" constant="12" id="Cn7-lK-gSl"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="9QH-Ss-yzc" secondAttribute="bottom" priority="999" constant="16" id="aYp-A3-xa8"/>
+                    <constraint firstItem="9QH-Ss-yzc" firstAttribute="leading" secondItem="FvF-p1-pAp" secondAttribute="leading" constant="12" id="tD4-2D-mpU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="iconImageView" destination="653-39-W7r" id="9Nd-Tk-9pN"/>
+                <outlet property="newsTitleLabel" destination="D0t-Oh-n8l" id="y3p-99-f1R"/>
+                <outlet property="sourceNameLabel" destination="215-dt-UcB" id="Ylm-x3-eQy"/>
+                <outlet property="timestampLabel" destination="G3J-Ld-Gmm" id="2pI-1m-eS8"/>
+            </connections>
+            <point key="canvasLocation" x="242.0289855072464" y="143.30357142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="saudi" width="200" height="132"/>
+    </resources>
+</document>

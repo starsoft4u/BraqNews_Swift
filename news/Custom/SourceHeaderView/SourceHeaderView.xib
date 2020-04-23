@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="barq.ttf">
+            <string>HelveticaNeueW23forSKY-Reg</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="rTH-lx-wMr" customClass="SourceHeaderView" customModule="news" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="496" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" translatesAutoresizingMaskIntoConstraints="NO" id="2WG-N2-13U">
+                    <rect key="frame" x="16" y="8" width="464" height="18"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeF-Ef-LBw">
+                            <rect key="frame" x="0.0" y="0.0" width="464" height="18"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeueW23forSKY-Reg" family="Helvetica Neue W23 for SKY" pointSize="19"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="zeF-Ef-LBw" firstAttribute="top" secondItem="2WG-N2-13U" secondAttribute="top" id="4KT-3N-44I"/>
+                        <constraint firstAttribute="trailing" secondItem="zeF-Ef-LBw" secondAttribute="trailing" id="5Y2-5V-kes"/>
+                        <constraint firstAttribute="bottom" secondItem="zeF-Ef-LBw" secondAttribute="bottom" id="C3z-jS-RLQ"/>
+                        <constraint firstItem="zeF-Ef-LBw" firstAttribute="leading" secondItem="2WG-N2-13U" secondAttribute="leading" id="qCy-rn-STT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="wY4-od-1Vi" firstAttribute="trailing" secondItem="2WG-N2-13U" secondAttribute="trailing" constant="16" id="0jD-qe-uwR"/>
+                <constraint firstItem="2WG-N2-13U" firstAttribute="top" secondItem="rTH-lx-wMr" secondAttribute="top" constant="8" id="3oo-cv-3Jg"/>
+                <constraint firstItem="2WG-N2-13U" firstAttribute="leading" secondItem="wY4-od-1Vi" secondAttribute="leading" constant="16" id="Ole-x6-0OB"/>
+                <constraint firstItem="wY4-od-1Vi" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="2WG-N2-13U" secondAttribute="bottom" priority="999" constant="8" id="xa9-CA-PrS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="wY4-od-1Vi"/>
+            <connections>
+                <outlet property="titleLabel" destination="zeF-Ef-LBw" id="rzX-V2-dNl"/>
+            </connections>
+            <point key="canvasLocation" x="49.275362318840585" y="-221.65178571428569"/>
+        </view>
+    </objects>
+</document>
